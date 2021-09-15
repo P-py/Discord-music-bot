@@ -3,6 +3,11 @@ import discord # Discord API
 from discord.ext import commands 
 import music # music.py
 
+"""
+pip install discord.py
+pip install youtube_dl
+"""
+
 cogs = [music] 
 
 client = commands.Bot(command_prefix="@", intents = discord.Intents.all())

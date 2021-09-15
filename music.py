@@ -2,12 +2,17 @@ import discord # Discord API
 from discord.ext import commands
 import youtube_dl # Lib. for handling youtube data extraction
 
+"""
+pip install discord.py
+pip install youtube_dl
+"""
+
 class music(commands.Cog):
   def __init__(self, client):
     self.client = client
   
   @commands.command()
-  async def help(self, ctx):
+  async def commandlist(self, ctx):
     await ctx.send("Here is a list of what can I do: \n")
     await ctx.send("> **join**: Before you can play some music you will need to add me to your voice channel, do that by typing `@join` in the chat.")
     await ctx.send("> **disconnect**: To turn me off the channel you just simply type `@disconnect` at the chat.")
