@@ -9,10 +9,14 @@ pip install youtube_dl
 
 command_list = """
 Here is a list of what can I do: \n
->>>**join**: Before you can play some music you will need to add me to your voice channel, do that by typing `@join` in the chat.
+>>> **join**: Before you can play some music you will need to add me to your voice channel, do that by typing `@join` in the chat.
+
 **disconnect**: To turn me off the channel you just simply type `@disconnect` at the chat.
+
 **play**: Finally, to play some music and have fun just type `@play [youtube url]` in the chat.
+
 **pause**: To pause the music now playing type `@pause` in chat.")
+
 **resume**: To unpause/resume the paused music type `@resume` in chat.
 """
 
