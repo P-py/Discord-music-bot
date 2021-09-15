@@ -7,18 +7,22 @@ pip install discord.py
 pip install youtube_dl
 """
 
+command_list = """
+Here is a list of what can I do: \n
+>>>**join**: Before you can play some music you will need to add me to your voice channel, do that by typing `@join` in the chat.
+**disconnect**: To turn me off the channel you just simply type `@disconnect` at the chat.
+**play**: Finally, to play some music and have fun just type `@play [youtube url]` in the chat.
+**pause**: To pause the music now playing type `@pause` in chat.")
+**resume**: To unpause/resume the paused music type `@resume` in chat.
+"""
+
 class music(commands.Cog):
   def __init__(self, client):
     self.client = client
   
   @commands.command()
   async def commandlist(self, ctx):
-    await ctx.send("Here is a list of what can I do: \n")
-    await ctx.send("> **join**: Before you can play some music you will need to add me to your voice channel, do that by typing `@join` in the chat.")
-    await ctx.send("> **disconnect**: To turn me off the channel you just simply type `@disconnect` at the chat.")
-    await ctx.send("> **play**: Finally, to play some music and have fun just type `@play [youtube url]` in the chat.")
-    await ctx.send("> **pause**: To pause the music now playing type `@pause` in chat.")
-    await ctx.send("> **resume**: To unpause/resume the paused music type `@resume` in chat.")
+    await ctx.send(command_list)
 
   @commands.command()
   async def join(self, ctx):

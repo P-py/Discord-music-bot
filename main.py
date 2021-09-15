@@ -16,4 +16,4 @@ for i in range(len(cogs)):
   cogs[i].setup(client)
 
 
-client.run("########################") # Bot token goes here.
+client.run("###") # Bot token goes here.
